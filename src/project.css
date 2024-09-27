@@ -1,1 +1,12 @@
+body {
+  background: #851c45;
+}
 
+.vanilla {
+  background: #f6f8fa;
+  max-width: 700px;
+  margin: 50px auto;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  padding: 40px;
+  border-radius: 16px;
+}
