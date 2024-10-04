@@ -6,7 +6,7 @@ body {
 .vanilla {
   background-image: url("https://images.pexels.com/photos/37728/pexels-photo-37728.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load");
   background-size: 100%;
-  max-width: 700px;
+  max-width: 650px;
   margin: 50px auto;
   box-shadow: 0 30px 50px rgba(240, 249, 249, 0.896);
   padding: 40px;
@@ -57,8 +57,8 @@ main {
 
 .weather-details {
   position: relative;
-  top: 200px;
-  left: 120px;
+  top: 50px;
+  right: 30px;
   font-size: 18px;
   color: hsla(237, 100%, 51%, 0.884);
   line-height: 24px;
@@ -76,16 +76,14 @@ main {
 }
 
 .weather-icon {
-  position: relative;
-  bottom: 30px;
-  right: 120px;
-  font-size: 100px;
-  margin-top: 22px;
+  font-size: 80px;
+  margin-top: 20px;
 }
 
 .weather-temperature {
-  font-size: 120px;
-  margin-left: 60px;
+  font-size: 90px;
+  margin-top: 14px;
+  margin-left: 8px;
   font-weight: bold;
 }
 
