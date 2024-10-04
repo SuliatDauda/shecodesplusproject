@@ -12,22 +12,28 @@
   <body>
     <div class="vanilla">
     <header>
-      <form>
-        <input type="search" placeholder="Enter a City..." />
-        <input type="submit" value="Search" />
+      <form class="search-form">
+        <input class="search-input" type="search" placeholder="Enter a City..." />
+        <input class="search-submit" type="submit" value="Search" />
       </form>
     </header>
 
     <main>
-      <div>
-        <h1>Lagos</h1>
-        <p>
-          Friday 20:59, overcast clouds
+      <div class="weather-data">
+        <h1 class="weather-city">Lagos, Nigeria</h1>
+      
+        <p class="weather-details">
+         Friday 20:59, overcast cloud
           <br />
-          Humidity: 90%, Wind: 4.12km/h
+          Humidity: <strong>90%</strong>, Wind: <strong>4.12km/h</strong>
         </p>
       </div>
-      <div>☁️ 27°C</div>
+      <div class="weather-temperature-container">
+      <div class="weather-icon" >☁️</div>
+      <div class="weather-temperature">27</div>
+    <div class="weather-unit">°C |°F</div>
+    </div>
+    </div>
     </main>
 
     <footer>
@@ -41,7 +47,7 @@
       >, and Hosted on
       <a href="https://app.netlify.com/" target="_blank">Netlify</a>
     </footer>
+    </div>
     <script src="src/project.js"></script>
   </body>
-  </div>
 </html>
