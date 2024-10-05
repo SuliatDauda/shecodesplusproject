@@ -8,19 +8,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="vanilla">
     <header>
       <form class="search-form" id = "search-form">
-        <input class="search-input"  "search" placeholder="Enter a City..." />
-        <input class="search-submit" type="submit" value="Search" />
+        <input type = "search" placeholder="Enter a City..." required id = "search-input" class="search-input" />
+        <input  type="submit" value="search" class="search-submit" />
       </form>
     </header>
 
     <main>
       <div class="weather-data">
-        <h1 class="weather-city">Lagos</h1>
+        <h1 class="weather-city" id="weather-city">Lagos</h1>
         <p class="weather-details">
          Friday 20:59, overcast cloud
          <br>
