@@ -1,6 +1,9 @@
 function updateWeather(response) {
   let temperatureBox = document.querySelector("#temperature");
   let temperature = response.data.temperature.current;
+  let cityBox = document.querySelector("#weather-city");
+
+  cityBox.innerHTML = response.data.city;
   temperatureBox.innerHTML = Math.round(temperature);
 }
 
@@ -13,11 +16,11 @@ function searchCity(city) {
 function handleSearchSubmit(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-input");
-  let cityBox = document.querySelector("#weather-city");
-  cityBox.innerHTML = searchInput.value;
 
   searchCity(searchInput.value);
 }
 
 let searchFormBox = document.querySelector("#search-form");
 searchFormBox.addEventListener("submit", handleSearchSubmit);
+
+searchCity("Lagos");
