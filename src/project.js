@@ -2,11 +2,19 @@ function updateWeather(response) {
   let temperatureBox = document.querySelector("#temperature");
   let temperature = response.data.temperature.current;
   let cityBox = document.querySelector("#weather-city");
+  let humidityBox = document.querySelector("#humidity");
+  let windSpeedBox = document.querySelector("#wind-speed");
+  let timeBox = document.querySelector("#time");
 
   let descriptionBox = document.querySelector("#description");
 
+  console.log(response.data);
+
   cityBox.innerHTML = response.data.city;
   descriptionBox.innerHTML = response.data.condition.description;
+  humidityBox.innerHTML = `${response.data.temperature.humidity}%`;
+  windSpeedBox.innerHTML = `${response.data.wind.speed}km/h`;
+  timeBox.innerHTML = "FRIDAY 11:20";
   temperatureBox.innerHTML = Math.round(temperature);
 }
 
