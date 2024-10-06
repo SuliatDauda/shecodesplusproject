@@ -7,6 +7,7 @@ function updateWeather(response) {
   let descriptionBox = document.querySelector("#description");
   let timeBox = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let iconImage = document.querySelector("#icon");
 
   console.log(response.data);
 
@@ -16,6 +17,7 @@ function updateWeather(response) {
   windSpeedBox.innerHTML = `${response.data.wind.speed}km/h`;
   timeBox.innerHTML = formatDate(date);
   temperatureBox.innerHTML = Math.round(temperature);
+  iconImage.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-icon">`;
 }
 
 function formatDate(date) {
