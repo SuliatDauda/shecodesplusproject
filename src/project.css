@@ -3,6 +3,10 @@ body {
   background: #f9fbfc;
 }
 
+a {
+  color: #700be4;
+}
+
 .vanilla {
   background-image: url("https://images.pexels.com/photos/37728/pexels-photo-37728.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load");
   background-size: 100%;
